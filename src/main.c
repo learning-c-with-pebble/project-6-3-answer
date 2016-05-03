@@ -36,7 +36,7 @@ void fill_the_rectangle(GContext *ctx, int width, int height, char *str, GFont c
     while (y < height) {
         x = 20;
         while (x < width) {
-            graphics_draw_text(ctx, str, fonts_get_system_font(FONT_KEY_GOTHIC_14), 
+            graphics_draw_text(ctx, str, font, 
                      GRect(x, y, size.w, size.h), 
                      GTextOverflowModeTrailingEllipsis, GTextAlignmentLeft, NULL);
             x += size.w;
